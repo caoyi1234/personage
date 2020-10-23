@@ -1,0 +1,9 @@
+.info{
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  background-color: aqua;
+  border:5px dashed blue;
+  box-sizing: border-box;
+}
