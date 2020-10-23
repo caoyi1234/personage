@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.less';
 import Info from './pages/index/index.jsx'
 
 function App() {

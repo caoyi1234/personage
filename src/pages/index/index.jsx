@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import './index.css'
+import './index.less'
 import { parseTime } from '../../utils/time'
 import WebTitle from '../../components/name/name'
 
