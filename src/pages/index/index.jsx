@@ -3,6 +3,7 @@ import { Component } from 'react';
 import './index.less'
 import { parseTime } from '../../utils/time'
 import WebTitle from '../../components/name/name'
+import Sun from '../../components/animation/start'
 
 
 
@@ -16,9 +17,12 @@ class info extends Component{
   }
   render(){
     return (
-      <div className="info">
-        <h1><code>NOW TIME:</code><tt>{this.state.newTime}</tt></h1>
-        <h1><code><WebTitle name={this.state.title}/></code></h1>
+      <div className='pages'>
+        <Sun angle={this.state.newTime}/>
+        <div className="info">
+          <h1><code>NOW TIME:</code><tt>{this.state.newTime}</tt></h1>
+          <h1><code><WebTitle name={this.state.title}/></code></h1>
+        </div>
       </div>
     )
   }

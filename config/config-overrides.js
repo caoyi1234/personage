@@ -16,9 +16,6 @@ module.exports = override(
   }),
   addLessLoader({
     javascriptEnabled: true,
-    modifyVars: {
-      '@primary-color': '#1DA57A'
-    }
   }),
 　　(config) => {
         //修改、添加loader 配置 :
