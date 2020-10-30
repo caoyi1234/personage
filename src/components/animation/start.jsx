@@ -38,7 +38,6 @@ class Sun extends Component{
     let ratio = Number(seconds-21600)/43200
     let left = Number((ratio*80).toFixed(2))+10;
     let top = (ratio*60).toFixed(2);
-    console.log(top)
     if(time[0]<12){
       top = 40-Number(top)
     }else{

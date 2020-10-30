@@ -23,6 +23,19 @@ class info extends Component{
           <h1><code>NOW TIME:</code><tt>{this.state.newTime}</tt></h1>
           <h1><code><WebTitle name={this.state.title}/></code></h1>
         </div>
+        <div className="container">
+          <div className="route">
+            {
+              
+            }
+          </div>
+          <div className="showInfo">
+
+          </div>
+        </div>
+        <footer>
+
+        </footer>
       </div>
     )
   }
