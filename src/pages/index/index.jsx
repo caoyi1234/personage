@@ -3,6 +3,7 @@ import { Component } from 'react';
 import './index.less'
 import { parseTime } from '../../utils/time'
 import WebTitle from '../../components/name/name'
+import Move from '../../components/move/move'
 import Sun from '../../components/animation/start'
 
 
@@ -19,14 +20,17 @@ class info extends Component{
     return (
       <div className='pages'>
         <Sun angle={this.state.newTime}/>
+        <Move/>
         <div className="info">
           <h1><code>NOW TIME:</code><tt>{this.state.newTime}</tt></h1>
+          <h1><code><WebTitle name={this.state.title}/></code></h1>
+          <h1><code><WebTitle name={this.state.title}/></code></h1>
           <h1><code><WebTitle name={this.state.title}/></code></h1>
         </div>
         <div className="container">
           <div className="route">
             {
-              
+
             }
           </div>
           <div className="showInfo">
