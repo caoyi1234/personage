@@ -4,11 +4,13 @@ import { Component } from 'react';
 class WebTitle extends Component{
   render(){
     return (
-      <div>{this.props.name}</div>
+      this.props.name.map((item,index)=>{
+        return <code key={index}>{item}</code>
+      })
     )
   }
   componentDidMount=()=>{
-    console.log(this.props)
+    // console.log(this.props)
   }
 }
 export default WebTitle;

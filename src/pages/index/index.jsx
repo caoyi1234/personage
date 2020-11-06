@@ -5,6 +5,7 @@ import { parseTime } from '../../utils/time'
 import WebTitle from '../../components/name/name'
 import Move from '../../components/move/move'
 import Sun from '../../components/animation/start'
+import Shows from '../../components/show/showItem'
 
 
 
@@ -13,7 +14,17 @@ class info extends Component{
     super(props);
     this.state = {
       newTime:'',
-      title:'LEARN',
+      title:['LIGHT','GRAY'],
+      showInfos:[{
+        title:'123',
+        content:'2132454'
+      },{
+        title:'123',
+        content:'2132454'
+      },{
+        title:'123',
+        content:'2132454'
+      }]
     }
   }
   render(){
@@ -21,24 +32,22 @@ class info extends Component{
       <div className='pages'>
         <Sun angle={this.state.newTime}/>
         <Move/>
-        <div className="info">
+        <div className="header">
           <h1><code>NOW TIME:</code><tt>{this.state.newTime}</tt></h1>
-          <h1><code><WebTitle name={this.state.title}/></code></h1>
-          <h1><code><WebTitle name={this.state.title}/></code></h1>
-          <h1><code><WebTitle name={this.state.title}/></code></h1>
+          <div>
+            <code><WebTitle name={this.state.title}/></code>
+          </div>
         </div>
         <div className="container">
           <div className="route">
-            {
-
-            }
           </div>
           <div className="showInfo">
-
+            <Shows/>
+            <Shows/>
           </div>
         </div>
         <footer>
-
+            <h3>react DOM</h3>
         </footer>
       </div>
     )
